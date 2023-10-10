@@ -1,0 +1,14 @@
+[project]
+name = "rffw"
+version = "0.0.1"
+dependencies = [
+    "numpy<=1.23.5",
+    'importlib-metadata; python_version>">=3.6"',
+]
+
+[build-system]
+requires = [
+    "setuptools>=42",
+    "wheel"
+]
+build-backend = "setuptools.build_meta"
