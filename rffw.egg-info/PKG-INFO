@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: rffw
+Version: 0.0.1
+Summary: A small example package
+Author: Stephen & Islam
+Author-email: author@example.com
+Classifier: Environment :: Console
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Topic :: Scientific/Engineering :: Physics
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+
+# FWD1D
+Forward calculation of 1D radial receiver function.
