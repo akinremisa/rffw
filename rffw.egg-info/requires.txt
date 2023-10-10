@@ -1,8 +1,0 @@
-numpy<=1.23.5
-cython>=0.29.21
-blosc2~=2.0.0
-FuzzyTM>=0.4.0
-OWSLib
-geographiclib
-pyshp>=2.1
-pyproj>=3.0.0
