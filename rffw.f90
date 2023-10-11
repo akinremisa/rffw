@@ -17,8 +17,14 @@ subroutine rffw(depth, vp, rho, vs, nlay, rayp, &
     do i=1, nlay-1
         if (i .eq. 1) then
             thick(i) =  depth(i)
-        else
-            thick(i) = depth(i+1) - depth(i)
+        else if (i .eq. 2) then
+            thick(i) = depth(i) - depth(i-1)
+        else if (i .eq. 3) then
+            thick(i) = depth(i) - depth(i-2)
+        else if (i .eq. 4) then
+            thick(i) = depth(i) - depth(i-3)
+        else if (i .eq. 5) then
+            thick(i) = depth(i) - depth(i-4)
         endif
     enddo
 
