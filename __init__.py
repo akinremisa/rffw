@@ -11,25 +11,22 @@ Here are some instructions to install rf into a fresh conda environment::
 conda deactivate
 
 2. Create new conda environment 'rffw' 
-conda create -n rffw python=3.9 anaconda -y
+conda create -n rffw python==3.9 
 
 3. Activate the environement 
 conda activate rffw
 
-4. Download via wget or web-browser
-wget https://github.com/akinremisa/rffw/archive/refs/heads/main.zip
-
-5. unzip the package
-unzip main.zip  
+4. Clone the git repository
+git clone https://github.com/akinremisa/rffw.git
 
 6. Change directory to the same directory that this repo is in (i.e., same directory as setup.py)
-cd rffw-main 
+cd rffw
  
 7. run pip comand:
 pip install - e. 
 
 
-Alternatively, the environment can be created using the environment.yml file in the root directory of this repo::
+### To Edit: Alternatively, the environment can be created using the environment.yml file in the root directory of this repo::
 conda env create -f environment.yml
 
 
