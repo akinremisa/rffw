@@ -18,13 +18,13 @@ git clone https://github.com/akinremisa/rffw.git
 6. Change directory to the same directory that this repo is cloned (i.e., same directory as setup.py)
 cd rffw
 7. run pip comand to install the package:
-pip install -e. 
+pip install -e . 
 
 
 Alternatively, the environment can be created using the environment.yml file in the root directory of this repo::
 conda env create -f environment.yml
 conda activate rffw
-pip install - e. 
+pip install - e . 
 
 
 
