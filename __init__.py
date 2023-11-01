@@ -27,7 +27,6 @@ conda activate rffw
 pip install -e . 
 
 
-
 References
 Herrmann, R. B. (2013). Computer programs in seismology: An evolving tool for
 instruction and research. Seismological Research Letters, 84 , 1081-1088. doi: 10.1785/0220110096
