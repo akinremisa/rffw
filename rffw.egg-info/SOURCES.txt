@@ -1,8 +1,0 @@
-LICENSE
-README.md
-setup.py
-rffw.egg-info/PKG-INFO
-rffw.egg-info/SOURCES.txt
-rffw.egg-info/dependency_links.txt
-rffw.egg-info/requires.txt
-rffw.egg-info/top_level.txt
