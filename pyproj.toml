@@ -1,11 +1,3 @@
-[project]
-name = "rffw"
-version = "0.0.1"
-dependencies = [
-    "numpy","matplotlib"
-    'importlib-metadata; python_version>">=3.6"',
-]
-
 [build-system]
 requires = [
     "setuptools>=42",
