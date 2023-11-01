@@ -25,7 +25,7 @@ setuptools.setup(
     url="https://github.com/pypa/sampleproject",
     setup_requires=["numpy"],
     packages=setuptools.find_packages(),
-    install_requires=['numpy'],
+    install_requires=['numpy', 'matplotlib'],
     classifiers=CLASSIFIERS)
 
 

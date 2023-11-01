@@ -24,7 +24,7 @@ pip install -e .
 Alternatively, the environment can be created using the environment.yml file in the root directory of this repo::
 conda env create -f environment.yml
 conda activate rffw
-pip install - e . 
+pip install -e . 
 
 
 
