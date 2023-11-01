@@ -3,7 +3,6 @@ from numpy import array
 import matplotlib.pyplot as plt
 import rffw
 from numpy import arange
-
 depth = array([ 5.0, 10.0, 20.0, 35.0, 50.0])
 rho = array([2.67, 2.85, 2.95, 3.1, 3.3])
 vp = array([4.0, 5.5, 7.0, 8.1, 8.4])
@@ -16,7 +15,6 @@ n = 1024
 delta = 0.04
 rf = rffw.rffw(depth, vp, rho, vs, \
                 rayp, gaussalp, delay, n, delta)
-
 l = len(rf)
 t = arange(0, l)
 t = (delta *  t) - delay 

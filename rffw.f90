@@ -19,22 +19,23 @@ subroutine rffw(depth, vp, rho, vs, nlay, rayp, &
             thick(i) =  depth(i)
         else if (i .eq. 2) then
             thick(i) = depth(i) - depth(i-1)
-            else if (i .eq. 3) then
-                thick(i) = depth(i) - depth(i-2)
-                else if (i .eq. 4) then
-                    thick(i) = depth(i) - depth(i-3)
-                    else if (i .eq. 5) then
-                        thick(i) = depth(i) - depth(i-4)
-                        else if (i .eq. 6) then
-                            thick(i) = depth(i) - depth(i-5)
-                            else if (i .eq. 7) then
-                                thick(i) = depth(i) - depth(i-6)
-                                else if (i .eq. 8) then
-                                    thick(i) = depth(i) - depth(i-7)
-                                    else if (i .eq. 9) then
-                                        thick(i) = depth(i) - depth(i-8)
-                                        else if (i .eq. 10) then
-                                            thick(i) = depth(i) - depth(i-9)
+        else if (i .eq. 3) then
+            thick(i) = depth(i) - depth(i-2)
+        else if (i .eq. 4) then
+            thick(i) = depth(i) - depth(i-3)
+        else if (i .eq. 5) then
+            thick(i) = depth(i) - depth(i-4)
+        else if (i .eq. 6) then
+            thick(i) = depth(i) - depth(i-5)
+        else if (i .eq. 7) then
+            thick(i) = depth(i) - depth(i-6)
+        else if (i .eq. 8) then
+            thick(i) = depth(i) - depth(i-7)
+        else if (i .eq. 9) then
+            thick(i) = depth(i) - depth(i-8)
+        else if (i .eq. 10) then
+            thick(i) = depth(i) - depth(i-9)
+        end if
     enddo
 
     modelin(1:nlay) = vs

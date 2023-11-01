@@ -24,4 +24,5 @@ dependencies:
   - zlib=1.2.13=h5eee18b_0
   - pip:
     - numpy==1.26.1
-prefix: /home/deepnl/anaconda3/envs/rffw
+    - matplotlib
+    - -e .

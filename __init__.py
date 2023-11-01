@@ -21,10 +21,15 @@ cd rffw
 pip install -e . 
 
 
-Alternatively, the environment can be created using the environment.yml file in the root directory of this repo::
+Alternatively, the environment can be created and the package installed using the environment.yml file in the root directory of this repo::
+1. Clone the rffw repository
+git clone https://github.com/akinremisa/rffw.git
+2. Change directory to the same directory that this repo is cloned (i.e., same directory as environment.yml)
+cd rffw
+3. Create the evniroment and install the package using the environment.yml file
 conda env create -f environment.yml
+4. Activate the environement
 conda activate rffw
-pip install -e . 
 
 
 References

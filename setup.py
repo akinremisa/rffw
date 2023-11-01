@@ -1,4 +1,4 @@
-#%% Setup the pip rffw package
+# Setup the pip rffw package
 import setuptools
 with open("./README.md", "r") as fh:
     long_description = fh.read()
@@ -19,13 +19,13 @@ setuptools.setup(
     version="0.0.1",
     author='Stephen Akinremi, Islam Fadel',
     author_email=['s.akinremi@utwente.nl', 'i.e.a.m.fadel@utwente.nl'],
-    description="A small example package",
+    description="Forward calculation of radial receiver function",
     long_description=long_description,
     long_description_content_type="text/markdown",
-    url="https://github.com/pypa/sampleproject",
+    url="https://github.com/akinremisa/rffw",
     setup_requires=["numpy"],
     packages=setuptools.find_packages(),
-    install_requires=['numpy'],
+    install_requires=['numpy', 'matplotlib'],
     classifiers=CLASSIFIERS)
 
 
