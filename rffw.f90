@@ -17,24 +17,10 @@ subroutine rffw(depth, vp, rho, vs, nlay, rayp, &
     do i=1, nlay-1
         if (i .eq. 1) then
             thick(i) =  depth(i)
-        else if (i .eq. 2) then
+            print*, thick(i), depth(i)
+        else
             thick(i) = depth(i) - depth(i-1)
-        else if (i .eq. 3) then
-            thick(i) = depth(i) - depth(i-2)
-        else if (i .eq. 4) then
-            thick(i) = depth(i) - depth(i-3)
-        else if (i .eq. 5) then
-            thick(i) = depth(i) - depth(i-4)
-        else if (i .eq. 6) then
-            thick(i) = depth(i) - depth(i-5)
-        else if (i .eq. 7) then
-            thick(i) = depth(i) - depth(i-6)
-        else if (i .eq. 8) then
-            thick(i) = depth(i) - depth(i-7)
-        else if (i .eq. 9) then
-            thick(i) = depth(i) - depth(i-8)
-        else if (i .eq. 10) then
-            thick(i) = depth(i) - depth(i-9)
+            print*, thick(i), depth(i), depth(i-1)
         end if
     enddo
 
@@ -58,5 +44,5 @@ subroutine rffw(depth, vp, rho, vs, nlay, rayp, &
     rfdim = n
     rfcalc = rf(1:rfdim)
 
-    return
+!     return
 end subroutine rffw
