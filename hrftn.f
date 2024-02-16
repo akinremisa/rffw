@@ -144,8 +144,10 @@ c read the VP
             etas(i) = 0.0
             frefp(i) =  1.0
             frefs(i) = 1.0
-            write(*,"(A12,I6,4F10.5)") 'Layer #: ',i,d(i),
-     1      b(i),a(i),rho(i)
+c>>>>>>>>IF 20240216 -- Enable for debugging
+c            write(*,"(A12,I6,4F10.5)") 'Layer #: ',i,d(i),
+c     1      b(i),a(i),rho(i)
+c<<<<<<<<IF 20240216 -- Enable for debugging
         end do
        
 c-----
@@ -162,16 +164,17 @@ c-----
 c-----
 c       output control parameters
 c-----
-        write(LOT,*)'dop          :',dop
-        write(LOT,*)'delay        :',delay
-        write(LOT,*)'dt           :',dt   
-        write(LOT,*)'rayp         :',rayp 
-        write(LOT,*)'gaussalp     :',gaussalp 
-        write(LOT,*)'n            :',n 
-        write(LOT,*)'Double Length:',dotwo
+c>>>>>>>>IF 20240216 -- Enable for debugging
+c        write(LOT,*)'dop          :',dop
+c        write(LOT,*)'delay        :',delay
+c        write(LOT,*)'dt           :',dt   
+c        write(LOT,*)'rayp         :',rayp 
+c        write(LOT,*)'gaussalp     :',gaussalp 
+c        write(LOT,*)'n            :',n 
+c        write(LOT,*)'Double Length:',dotwo
 c        lm = lgstr(mname)
 c        write(LOT,*)'Model        :',mname(1:lm)
-c-----
+c<<<<<<<<IF 20240216 -- Enable for debugging
 c       ensure that the number of points is a power of 2
 c-----
         call npow2(n)

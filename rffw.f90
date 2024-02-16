@@ -17,10 +17,14 @@ subroutine rffw(depth, vp, rho, vs, nlay, rayp, &
     do i=1, nlay-1
         if (i .eq. 1) then
             thick(i) =  depth(i)
-            print*, thick(i), depth(i)
+!>>>>>>>>IF 20240216 -- Enable for debugging
+!            print*, thick(i), depth(i)
+!<<<<<<<<IF 20240216 -- Enable for debugging
         else
             thick(i) = depth(i) - depth(i-1)
-            print*, thick(i), depth(i), depth(i-1)
+!>>>>>>>>IF 20240216 -- Enable for debugging
+!            print*, thick(i), depth(i), depth(i-1)
+!<<<<<<<<IF 20240216 -- Enable for debugging
         end if
     enddo
 
